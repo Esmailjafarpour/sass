@@ -1,16 +1,5 @@
-@import "variable";
-
-@mixin textStyle($Color,$bgColor,$border,$padding) {
-    color : $Color;
-    background-color: $bgColor;
-    border-radius: $border;
-    padding: $padding;
-}
-
-@mixin fontSize($fontSize,$fontWeight) {
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-}
+@import "variables";
+@import "mixins";
 
 
 .container{
@@ -29,16 +18,39 @@
 }
 
 h1{
-    @include textStyle(red,$primaryColorOne ,2px ,8px);
-    @include fontSize(3rem,bold);
+    @include textStyle(rgb(72, 255, 0),$primaryColorOne ,6px ,8px);
+    @include fontSize($fontSize/2,bold);
+    @include hoverEffect(rgb(210, 240, 185),rgb(54, 121, 0));
+    @include query(600){
+        color: rgb(252, 249, 243);
+        background-color: rgb(245, 182, 10);
+        font-size: 4rem;
+    }
 }
 
 h2{
-    @include textStyle(red,$primaryColorTwo ,4px ,16px);
+    @include textStyle(rgb(56, 51, 51),$primaryColorTwo ,10px ,16px);
     @include fontSize(1.5rem,800);
+    @include hoverEffect(rgb(175, 150, 4),rgb(140, 226, 69));
+    
+
 }
 
 p{
-    @include textStyle(red,$primaryColorThree ,2px ,12px);
+    @include textStyle(rgb(252, 252, 252),$primaryColorThree ,6px ,12px);
     @include fontSize(2rem,bold);
+    @include hoverEffect(rgb(3, 67, 128),rgb(235, 212, 8));
+    @include query(850){
+        font-size: 1.5rem;
+        color: red;
+    }
+    // $number :900; 
+    // @if($number == 800){
+    //     font-size: 4rem;
+    // }@else if($number == 400){
+    //     font-size: 2rem;
+    // }@else{
+    //     font-size: 1.5rem;
+    // }
+
 }

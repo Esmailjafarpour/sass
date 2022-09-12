@@ -1,0 +1,66 @@
+.container ul {
+  list-style-type: none;
+}
+.container li {
+  padding: 15px;
+}
+.container a {
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(72, 255, 0);
+  background-color: rgb(10, 99, 151);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h1:hover {
+  background-color: rgb(210, 240, 185);
+  cursor: pointer;
+  color: rgb(54, 121, 0);
+}
+@media (max-width: 600px) {
+  h1 {
+    color: rgb(252, 249, 243);
+    background-color: rgb(245, 182, 10);
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  color: rgb(56, 51, 51);
+  background-color: rgb(238, 241, 26);
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+h2:hover {
+  background-color: rgb(175, 150, 4);
+  cursor: pointer;
+  color: rgb(140, 226, 69);
+}
+
+p {
+  color: rgb(252, 252, 252);
+  background-color: rgb(6, 41, 61);
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+p:hover {
+  background-color: rgb(3, 67, 128);
+  cursor: pointer;
+  color: rgb(235, 212, 8);
+}
+@media (min-width: 900px) {
+  p {
+    font-size: 1.5rem;
+    color: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

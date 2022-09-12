@@ -1,0 +1,38 @@
+@mixin textStyle($Color,$bgColor,$border,$padding) {
+    color : $Color;
+    background-color: $bgColor;
+    border-radius: $border;
+    padding: $padding;
+}
+
+@mixin fontSize($fontSize,$fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+@mixin hoverEffect($bgColor,$colorText) {
+    //sudo class
+    &:hover{
+        background-color:$bgColor ;
+        cursor: pointer;
+        color :$colorText ;
+    }
+}
+
+@mixin query($Width){
+
+    @if($Width == 400){
+        @media (max-width : 400px) {
+            @content;
+        }
+    }@else if($Width == 600){
+        @media (max-width : 600px) {
+            @content;
+        }
+    }@else{
+        @media (min-width : 900px) {
+            @content;
+        }
+    }
+    
+}
