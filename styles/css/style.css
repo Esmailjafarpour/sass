@@ -56,7 +56,7 @@ p:hover {
   cursor: pointer;
   color: rgb(235, 212, 8);
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   p {
     font-size: 1.5rem;
     color: red;
