@@ -1,0 +1,44 @@
+@import "variable";
+
+@mixin textStyle($Color,$bgColor,$border,$padding) {
+    color : $Color;
+    background-color: $bgColor;
+    border-radius: $border;
+    padding: $padding;
+}
+
+@mixin fontSize($fontSize,$fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+
+.container{
+
+    ul{
+        list-style-type: none;
+    }
+
+    li{
+        padding: 15px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+h1{
+    @include textStyle(red,$primaryColorOne ,2px ,8px);
+    @include fontSize(3rem,bold);
+}
+
+h2{
+    @include textStyle(red,$primaryColorTwo ,4px ,16px);
+    @include fontSize(1.5rem,800);
+}
+
+p{
+    @include textStyle(red,$primaryColorThree ,2px ,12px);
+    @include fontSize(2rem,bold);
+}
