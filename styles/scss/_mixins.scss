@@ -44,3 +44,29 @@
     }
     
 }
+
+//for
+@for $item from 1 through 5{
+    .content-#{$item}{
+        color: white;
+        background-color: rgb(48, 9, 192);
+        height: 20px * $item;
+    }
+}
+
+
+//while
+
+$item : 5;
+
+@while ($item > 0) {
+    .content-#{$item}{
+        color: white;
+        background-color: rgb(48, 9, 192);
+        height: 20px * $item;
+    }
+    $item : $item - 1
+}
+
+
+

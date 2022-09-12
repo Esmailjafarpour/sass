@@ -1,3 +1,63 @@
+.content-1 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 20px;
+}
+
+.content-2 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 40px;
+}
+
+.content-3 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 60px;
+}
+
+.content-4 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 80px;
+}
+
+.content-5 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 100px;
+}
+
+.content-5 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 100px;
+}
+
+.content-4 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 80px;
+}
+
+.content-3 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 60px;
+}
+
+.content-2 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 40px;
+}
+
+.content-1 {
+  color: white;
+  background-color: rgb(48, 9, 192);
+  height: 20px;
+}
+
 .container ul {
   list-style-type: none;
 }
@@ -61,6 +121,22 @@ p:hover {
     font-size: 1.5rem;
     color: red;
   }
+}
+
+.main-1 {
+  color: red;
+}
+
+.main-2 {
+  color: blue;
+}
+
+.main-3 {
+  color: green;
+}
+
+.main-4 {
+  color: rgb(128, 0, 128);
 }
 
 /*# sourceMappingURL=style.css.map */
