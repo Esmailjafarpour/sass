@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-h1 {
+.header, h5 {
   color: rgb(72, 255, 0);
   background-color: rgb(10, 99, 151);
   border-radius: 6px;
@@ -16,13 +16,13 @@ h1 {
   font-size: 1.5rem;
   font-weight: bold;
 }
-h1:hover {
+.header:hover, h5:hover {
   background-color: rgb(210, 240, 185);
   cursor: pointer;
   color: rgb(54, 121, 0);
 }
 @media (max-width: 600px) {
-  h1 {
+  .header, h5 {
     color: rgb(252, 249, 243);
     background-color: rgb(245, 182, 10);
     font-size: 4rem;

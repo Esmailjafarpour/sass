@@ -17,7 +17,7 @@
     }
 }
 
-h1{
+.header{
     @include textStyle(rgb(72, 255, 0),$primaryColorOne ,6px ,8px);
     @include fontSize($fontSize/2,bold);
     @include hoverEffect(rgb(210, 240, 185),rgb(54, 121, 0));
@@ -47,7 +47,7 @@ p{
 
 
     // Conditional commands
-    
+
     // $number :900; 
     // @if($number == 800){
     //     font-size: 4rem;
@@ -57,4 +57,10 @@ p{
     //     font-size: 1.5rem;
     // }
 
+}
+
+
+h5{
+    // inheritance
+    @extend .header
 }
