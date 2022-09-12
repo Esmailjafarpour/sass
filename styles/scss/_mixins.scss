@@ -10,6 +10,9 @@
     font-weight: $fontWeight;
 }
 
+
+// class-Mathematical 
+
 @mixin hoverEffect($bgColor,$colorText) {
     //sudo class
     &:hover{
@@ -20,17 +23,22 @@
 }
 
 @mixin query($Width){
-
+    // Conditional commands
     @if($Width == 400){
         @media (max-width : 400px) {
+            // content
             @content;
         }
+        // Conditional commands
     }@else if($Width == 600){
         @media (max-width : 600px) {
+            // content
             @content;
         }
+        // Conditional commands
     }@else{
         @media (min-width : 950px) {
+            // content
             @content;
         }
     }
